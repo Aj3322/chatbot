@@ -31,8 +31,8 @@ def get_gemini_response(user_input):
 def getResponse():
     if request.method == 'POST':
         user_input = request.get_json(force=True)
-        response = get_gemini_response(user_input['input'])
-        return jsonify(response)
+        response = get_gemini_response(user_input['input']+" keep the answer short and to the point. Only suggest the preventions")
+        return {"response": response}
         
     
 if __name__ == '__main__':
