@@ -2,3 +2,4 @@ Flask
 google
 numpy
 google-generativeai
+gunicorn
