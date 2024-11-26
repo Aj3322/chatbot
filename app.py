@@ -6,11 +6,11 @@ import google.generativeai as genai
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
-api = 'AIzaSyCPTrN4irJspGsFB9vVdeEPQAAiiPmisis'
+api = 'AIzaSyCP7iEckUNQz6-I8xeqPHNUQW0eHLOdlXM'
 genai.configure(api_key=api)
 
 import os
-os.environ[api] = 'AIzaSyCPTrN4irJspGsFB9vVdeEPQAAiiPmisis'
+os.environ[api] = 'AIzaSyCP7iEckUNQz6-I8xeqPHNUQW0eHLOdlXM'
 
 def is_topic_specific(response):
     keywords = ["stress", "panic","anxiety","sleep","mental health",'anxious','fearful','nervous','worried','money','financial','social','failure','breakup']
